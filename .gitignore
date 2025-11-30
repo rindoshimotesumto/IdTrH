@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+*.zip
+img/
+/gender_dataset
+
 # C extensions
 *.so
 

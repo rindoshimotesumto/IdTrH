@@ -1,0 +1,5 @@
+train: /datasets/coco/train2017
+val: /datasets/coco/val2017
+
+names:
+  0: person
