@@ -7,8 +7,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-UTKFace/
-dataset/
 .Python
 build/
 develop-eggs/
