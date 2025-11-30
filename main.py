@@ -1,10 +1,10 @@
+import cv2
 from camera.camera import Camera
 from detectors.person_detectory import PersonDetector
 from classifiers.gender_classifier import GenderClassifier
 from utils.logger import EventLogger
 from utils.drawer import Drawer
 from trackers.bytetrack import BYTETracker
-import cv2
 
 camera = Camera()
 detector = PersonDetector()
