@@ -2,7 +2,7 @@ import cv2
 
 class Camera:
     def __init__(self, source=0):
-        self.cap = cv2.VideoCapture(source)
+        self.cap = cv2.VideoCapture(source, cv2.CAP_FFMPEG)
 
     def read(self):
         ret, frame = self.cap.read()
