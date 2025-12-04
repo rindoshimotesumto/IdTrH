@@ -20,8 +20,8 @@ CAMERAS = [
     # "https://hd-auth.skylinewebcams.com/live.m3u8?a=dinthtcfp52sld5jrugp406lb4",
 
     # несколько камер
-    "rtsp://192.168.0.103:8080/h264.sdp",
-    "https://hd-auth.skylinewebcams.com/live.m3u8?a=dinthtcfp52sld5jrugp406lb4",
+    "link",
+    "link",
     # "rtsp://user:pass@ip:554/stream",
 ]
 
