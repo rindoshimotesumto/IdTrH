@@ -33,10 +33,7 @@ def run_camera(source, cam_id):
 
     cap = cv2.VideoCapture(source, cv2.CAP_FFMPEG)
     if not cap.isOpened():
-        print(f"[CAM {cam_id}] ❌ Камера не открылась: {source}")
         return
-
-    print(f"[CAM {cam_id}] ✔ Камера запущена")
 
     while True:
         ret, frame = cap.read()
@@ -83,18 +80,9 @@ def run_camera(source, cam_id):
 def main():
 
     if len(CAMERAS) == 1:
-        # --------------------------
-        #   Режим одной камеры
-        # --------------------------
-        print("💡 Режим: ОДНА камера")
         run_camera(CAMERAS[0], 0)
 
     else:
-        # --------------------------
-        #   Режим мультикамер
-        # --------------------------
-        print("📡 Режим: МНОГО КАМЕР")
-
         threads = []
 
         for i, cam_source in enumerate(CAMERAS):
